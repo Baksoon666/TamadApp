@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tables"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="20dp"
+        app:srcCompat="@drawable/tables_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="40dp"
+        android:paddingRight="10dp">
+
+        <Button
+            android:id="@+id/btn_table_general"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/general_table"
+            android:onClick="onGeneralTable"/>
+
+        <Button
+            android:id="@+id/btn_table_funeral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/funeral_table"
+            android:onClick="onFuneralTable"/>
+
+        <Button
+            android:id="@+id/btn_table_bday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/birthday_table"
+            android:onClick="onBdayTable"/>
+
+        <Button
+            android:id="@+id/btn_table_wedding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wedding_table"
+            android:onClick="onWeddingTable"/>
+
+        <Button
+            android:id="@+id/btn_table_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_table"
+            android:onClick="onCustomTable"/>
+
+    </LinearLayout>
+
+</FrameLayout>
